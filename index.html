@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="main" >
+            <label for="cost">Enter cost:</label>
+            <input type="number" id="cost" />
+            <br />
+            <label for="startdate">Enter start date:</label>
+            <input type="text" id="startdate" placeholder="dd/mm/yyyy" />
+            <br />
+            <label for="enddate">Enter end date:</label>
+            <input type="text" id="enddate" placeholder="dd/mm/yyyy" />
+            <br />
+            <label for="interest">Enter interest rate:</label>
+            <input type="number" id="interest" value="10.33" />
+            <br />
+            <button onclick="calculate()" id="submit-btn" > Submit </button> 
+
+            <div class="answer" id="answer" >
+                <h2> Answer </h2>
+                <h1 id="answer-text" >42.33 </h1>     
+            </div>
+        </div>
+        
+        <script src="index.js" ></script>
+    </body>
+</html>
